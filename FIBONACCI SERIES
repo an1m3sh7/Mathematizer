@@ -1,0 +1,37 @@
+//https://www.facebook.com/permalink.php?story_fbid=2376635879298242&id=100008555587566
+//Subscribed and liked by Aryan Kumar
+
+#include<stdio.h>
+int fib(int n);
+
+int main()
+{
+    int terms;
+    printf("Enter terms : ");
+    scanf("%d", &terms);
+
+    for (int n = 0; n < terms; n++)
+    {
+        printf("%d", fib(n));
+    }
+
+    return 0;
+}
+
+int fib(int n)
+{
+    if (n==0)
+    {
+        return 0;
+    }
+    else if (n==1)
+    {
+        return 1;
+    }
+    else
+    {
+        return fib(n-1) + fib(n-2);
+    }
+
+
+}
