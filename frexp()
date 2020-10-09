@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main ()
+{
+	double x = 6.81, significand;
+	int *exp;
+	significand = frexp(x , exp);
+	cout << x << " = " << significand << " * 2^" << *exp << endl;
+
+	return 0;
+}
