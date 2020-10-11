@@ -1,0 +1,34 @@
+C++ Program to Calculate Power of a Number
+
+In this article, you will learn to compute power to a number manually, and by using pow() function.
+
+This program takes two numbers from the user (a base number and an exponent) and calculates the power.
+
+Power of a number = base^exponent
+
+The above technique works only if the exponent is a positive integer.
+
+If you need to find the power of a number with any real number as an exponent, you can use pow() function.
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int exponent;
+    float base, result = 1;
+
+    cout << "Enter base and exponent respectively:  ";
+    cin >> base >> exponent;
+
+    cout << base << "^" << exponent << " = ";
+
+    while (exponent != 0) {
+        result *= base;
+        --exponent;
+    }
+
+    cout << result;
+    
+    return 0;
+}
